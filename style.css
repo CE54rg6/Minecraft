@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d5a27;
+  font-family: Arial, sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== Landing Page ===== */
+.landing {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/930/975/731/minecraft-theme-background-images-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-overlay {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.landing-box {
+  background: rgba(15, 30, 12, 0.92);
+  padding: 40px 50px;
+  border-radius: 12px;
+  max-width: 620px;
+  width: 100%;
+  text-align: left;
+  line-height: 1.6;
+  border: 3px solid #5a8f3d;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
+  color: #a0e75a;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 3px 3px 0 #1a3a10;
+}
+
+.logo .subtitle {
+  font-family: 'Press Start 2P', cursive;
+  color: #8bc34a;
+  font-size: 10px;
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+
+.description {
+  text-align: center;
+  color: #c8e6c9;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.landing-box h2 {
+  margin-top: 25px;
+  color: #8bc34a;
+  font-size: 18px;
+}
+
+.landing-box ol,
+.landing-box ul {
+  padding-left: 22px;
+  color: #e8f5e9;
+}
+
+.landing-box li {
+  margin-bottom: 8px;
+}
+
+.start-btn {
+  display: block;
+  width: fit-content;
+  margin: 35px auto 0;
+  padding: 14px 40px;
+  background: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.2s;
+  text-align: center;
+  border: 3px solid #2e7d32;
+}
+
+.start-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* ===== Game Title (Logo) ===== */
+.game-title {
+  font-family: 'Press Start 2P', cursive;
+  background: #2a2a2a;
+  padding: 12px 28px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #ffffff;
+  border: 3px solid #555;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* ===== World Grid ===== */
+#world {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(12, 30px);
+  border: 3px solid #1a1a1a;
+  background: #87ceeb;
+}
+
+.tile {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tile-sky {
+  background: #87ceeb;
+}
+
+.tile-cloud {
+  background: #ffffff;
+}
+
+.tile-grass {
+  background: #5d9c3f;
+}
+
+.tile-dirt {
+  background: #8b5a2b;
+}
+
+.tile-rock {
+  background: #7a7a7a;
+}
+
+.tile-wood {
+  background: #a0522d;
+}
+
+.tile-leaves {
+  background: #2e7d32;
+}
+
+/* ===== Bottom Bar ===== */
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
+  background: #1e3a1c;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+/* ===== Toolbar ===== */
+#toolbar {
+  display: flex;
+  gap: 10px;
+}
+
+.tool {
+  width: 50px;
+  height: 50px;
+  background: #3a5a38;
+  border: 3px solid #2a4a28;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.tool:hover {
+  background: #4a6a48;
+}
+
+.tool.selected {
+  border-color: #ffeb3b;
+  box-shadow: 0 0 8px #ffeb3b;
+}
+
+/* ===== Inventory ===== */
+#inventory {
+  display: flex;
+  gap: 12px;
+}
+
+.inv-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.inv-item.selected {
+  border-color: #ffeb3b;
+  background: rgba(255, 235, 59, 0.15);
+}
+
+.tile.small {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #222;
+}
+
+#count-grass,
+#count-dirt,
+#count-rock,
+#count-wood,
+#count-leaves {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ===== Reset Button ===== */
+#reset-btn {
+  padding: 10px 20px;
+  background: #c62828;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background: #b71c1c;
+}
