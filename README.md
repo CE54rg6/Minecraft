@@ -1,6 +1,8 @@
 # Minecraft 2D
-
 A simple 2D version of Minecraft built with HTML, CSS, and JavaScript.
+
+##link
+[https://ce54rg6.github.io/Minecraft/]
 
 ## Description
 This project is a basic 2D Minecraft-style game where the player can:
@@ -39,5 +41,3 @@ This project is a basic 2D Minecraft-style game where the player can:
 
 ## Assignment review
 This assignment helped me practice HTML structure, CSS styling, and JavaScript DOM manipulation. It was a good way to understand how game logic works in the browser.
-##link
-[https://ce54rg6.github.io/Minecraft/]
