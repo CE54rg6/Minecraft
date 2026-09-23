@@ -2,49 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Minecraft 2D</title>
+  <title>Minecraft 2D - How to Play</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
-<body>
-  <h1 class="game-title">MINECRAFT-2D</h1>
+<body class="landing">
 
-  <div id="world"></div>
+  <div class="landing-overlay">
+    <div class="landing-box">
+      <div class="logo">
+        <h1>MINECRAFT 2D</h1>
+        <p class="subtitle">HTML • CSS • JavaScript</p>
+      </div>
 
-  <div class="bottom-bar">
-    <div id="toolbar">
-      <div class="tool" id="axe">🪓</div>
-      <div class="tool" id="pickaxe">⛏️</div>
-      <div class="tool" id="shovel">🧹</div>
+      <p class="description">A simple 2D version of Minecraft.</p>
+
+      <h2>How to Play</h2>
+      <ol>
+        <li>Select a tool from the toolbar (Axe, Pickaxe or Shovel).</li>
+        <li>Click on a tile in the world that matches the tool.</li>
+        <li>The tile will be removed and added to your inventory.</li>
+        <li>Click on an item in the inventory to select it, then click on an empty tile to place it.</li>
+        <li>Use the Reset button to restore the world to its original state.</li>
+      </ol>
+
+      <h2>Tools</h2>
+      <ul>
+        <li><strong>Axe</strong> → Removes Tree (wood + leaves)</li>
+        <li><strong>Pickaxe</strong> → Removes Rock</li>
+        <li><strong>Shovel</strong> → Removes Dirt and Grass</li>
+      </ul>
+
+<a href="game.html" class="start-btn">Start Game</a>
     </div>
-
-    <div id="inventory">
-      <div class="inv-item" id="inv-grass">
-        <div class="tile tile-grass small"></div>
-        <span id="count-grass">0</span>
-      </div>
-      <div class="inv-item" id="inv-dirt">
-        <div class="tile tile-dirt small"></div>
-        <span id="count-dirt">0</span>
-      </div>
-      <div class="inv-item" id="inv-rock">
-        <div class="tile tile-rock small"></div>
-        <span id="count-rock">0</span>
-      </div>
-      <div class="inv-item" id="inv-wood">
-        <div class="tile tile-wood small"></div>
-        <span id="count-wood">0</span>
-      </div>
-      <div class="inv-item" id="inv-leaves">
-        <div class="tile tile-leaves small"></div>
-        <span id="count-leaves">0</span>
-      </div>
-    </div>
-
-    <button id="reset-btn">Reset</button>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
