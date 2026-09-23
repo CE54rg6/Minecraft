@@ -1,7 +1,7 @@
 # Minecraft 2D
 A simple 2D version of Minecraft built with HTML, CSS, and JavaScript.
 
-##link
+.link
 [https://ce54rg6.github.io/Minecraft/]
 
 ## Description
