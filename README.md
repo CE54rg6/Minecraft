@@ -39,4 +39,5 @@ This project is a basic 2D Minecraft-style game where the player can:
 
 ## Assignment review
 This assignment helped me practice HTML structure, CSS styling, and JavaScript DOM manipulation. It was a good way to understand how game logic works in the browser.
-.
+##link
+[https://ce54rg6.github.io/Minecraft/]
